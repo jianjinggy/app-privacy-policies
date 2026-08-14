@@ -33,11 +33,11 @@
     <p class="meta"><strong>Platform:</strong> iOS / iPadOS App Store</p>
     <p class="meta"><strong>Bundle identifier:</strong> <code>com.xuzengfei.ballrun4</code></p>
     <p class="meta"><strong>Developer:</strong> Everyday Game Studio</p>
-    <p class="meta"><strong>Effective date:</strong> August 14, 2026</p>
+    <p class="meta"><strong>Effective date:</strong> August 15, 2026</p>
   </header>
 
   <section>
-    <p class="notice"><strong>Development and advertising status.</strong> The current Apple-platform build is in development/testing and uses Google's official test AdMob App ID and interstitial ad unit. Before a public production release, the test IDs will be replaced with the publisher's formal IDs and the privacy, consent, advertising, App Privacy, and App Store declarations will be rechecked against the released configuration.</p>
+    <p class="notice"><strong>Advertising and consent status.</strong> The current iOS/iPadOS configuration uses the publisher's formal Google AdMob App ID and interstitial ad unit. The app uses Google Mobile Ads with its User Messaging Platform (UMP) consent flow and Apple's AppTrackingTransparency (ATT) status/request flow where applicable. The disclosures on this page describe the current app configuration and may be updated if the advertising or consent setup changes.</p>
   </section>
 
   <section>
@@ -58,7 +58,7 @@
 
   <section>
     <h2>3. Google Mobile Ads and information that may be processed</h2>
-    <p>The game uses the Google Mobile Ads SDK (AdMob) to request and show interstitial ads at eligible level-victory screens. Google and its service providers may process information needed to request, deliver, measure, secure, and limit advertising. Depending on the device, operating system, region, consent choice, and final ad configuration, this may include:</p>
+    <p>The game uses the Google Mobile Ads SDK (AdMob) to request and show interstitial ads at eligible level-victory screens. The current iOS configuration uses AdMob App ID <code>ca-app-pub-6195112913810746~5402253455</code> and interstitial ad unit <code>ca-app-pub-6195112913810746/6557116127</code>. Google and its service providers may process information needed to request, deliver, measure, secure, and limit advertising. Depending on the device, operating system, region, and consent choice, this may include:</p>
     <ul>
       <li>IP address and a general or approximate location inferred from network information;</li>
       <li>device, app, operating-system, network, and advertising identifiers or similar technical identifiers;</li>
@@ -66,19 +66,18 @@
       <li>signals used for fraud prevention, security, aggregated reporting, or ad selection.</li>
     </ul>
     <p>The exact processing is controlled in part by Google's SDK and the publisher's AdMob settings. Google may share relevant information with its advertising and measurement partners under its policies. See <a href="https://policies.google.com/privacy" rel="noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" rel="noreferrer">How Google uses information from sites or apps that use its services</a>.</p>
-    <p>For the current development configuration, the official Google test values are iOS test App ID <code>ca-app-pub-3940256099942544~1458002511</code> and iOS interstitial test unit <code>ca-app-pub-3940256099942544/4411468910</code>. These are not production advertising identifiers.</p>
   </section>
 
   <section>
     <h2>4. iOS/iPadOS platform differences</h2>
-    <p>The current iOS/iPadOS app does not request contacts, photos, camera, microphone, Bluetooth, or location permissions. It does include the Google Mobile Ads configuration and an <code>NSUserTrackingUsageDescription</code> text entry. The current app code does not call Apple's AppTrackingTransparency authorization request; the presence of that description alone does not mean that tracking permission has been requested or granted.</p>
-    <p>If a future release uses tracking or personalized advertising in a way that requires AppTrackingTransparency, the app will present the applicable system permission and consent flow before that use, and the App Store privacy answers and this policy will be updated. Apple may also process data through platform services under <a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple's Privacy Policy</a>.</p>
+    <p>The current iOS/iPadOS app does not request contacts, photos, camera, microphone, Bluetooth, or location permissions. It includes the Google Mobile Ads configuration, an <code>NSUserTrackingUsageDescription</code> text entry, and the ATT calls used by the AdMob plugin. During initialization, the app checks the ATT status and requests authorization only when the status is <code>notDetermined</code>. The app can still run if authorization is denied or restricted; advertising personalization and measurement then depend on Apple's and Google's applicable controls.</p>
+    <p>Apple may process data through platform services under <a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple's Privacy Policy</a>. The app does not request precise location or any other permission not described in this policy.</p>
   </section>
 
   <section>
     <h2>5. Consent and advertising choices</h2>
-    <p>The project includes Google Mobile Ads dependencies, but the current app code does not yet complete the app-level Google User Messaging Platform (UMP) consent-information update and consent-form flow. The production release must complete and test the applicable consent flow before advertising is treated as release-ready. This page records the current development state; it is not a statement that UMP or AppTrackingTransparency integration has already been completed.</p>
-    <p>Users can review Apple's device privacy and tracking controls and Google's advertising controls at <a href="https://adssettings.google.com/" rel="noreferrer">Google Ads Settings</a>. Available choices and ad behavior vary by location, law, device, and the final configuration.</p>
+    <p>During initialization on iOS/iPadOS, the app requests Google's UMP consent information. If Google reports that ads cannot yet be requested and a consent form is available, the app presents that form and then rechecks the result. Interstitial requests are blocked when the consent state does not permit ad requests. The in-app privacy control can open Google's privacy-options form when the SDK provides it, after which the app rechecks consent before preparing ads.</p>
+    <p>Users can also review Apple's device privacy and tracking controls and Google's advertising controls at <a href="https://adssettings.google.com/" rel="noreferrer">Google Ads Settings</a>. Available choices and ad behavior vary by location, law, device, consent choice, and the applicable service settings.</p>
   </section>
 
   <section>
@@ -88,7 +87,7 @@
 
   <section>
     <h2>7. Children's privacy</h2>
-    <p>The game does not require an account and does not knowingly ask children or adults to submit personal information directly to the developer. We do not knowingly collect personal information directly from children. Before release, the App Store age-rating, child-directed treatment, advertising, and App Privacy settings must be completed and kept consistent with the final product and applicable law. Parents or guardians who believe a child has provided personal information may contact us so that we can review the request.</p>
+    <p>The game does not require an account and does not knowingly ask children or adults to submit personal information directly to the developer. We do not knowingly collect personal information directly from children. The App Store age-rating, child-directed treatment, advertising, and App Privacy settings are maintained consistently with the current product and applicable law. Parents or guardians who believe a child has provided personal information may contact us so that we can review the request.</p>
   </section>
 
   <section>
@@ -110,7 +109,7 @@
   </section>
 
   <footer>
-    <p>Last updated: August 14, 2026. This page is specific to Neon Ballway / 霓虹跃球 and is not the policy for any other application.</p>
+    <p>Last updated: August 15, 2026. This page is specific to Neon Ballway / 霓虹跃球 and is not the policy for any other application.</p>
   </footer>
 </main>
 </body>
