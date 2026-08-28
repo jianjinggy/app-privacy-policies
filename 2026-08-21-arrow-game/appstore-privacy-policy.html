@@ -16,99 +16,38 @@
       --card: rgba(255, 255, 255, .94);
       --line: #cfe7f4;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       background: linear-gradient(160deg, #dff5ff 0%, #f7fcff 48%, #fff3dd 100%);
       color: var(--ink);
       font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-
     main {
       width: min(920px, calc(100% - 32px));
       margin: 0 auto;
       padding: 48px 0 64px;
     }
-
-    header,
-    section {
+    header, section {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: 0 14px 36px rgba(35, 102, 137, .10);
-      padding: 26px 30px;
-    }
-
-    header {
-      background: linear-gradient(135deg, #ffffff 0%, var(--sky) 100%);
+      border-radius: 18px;
+      box-shadow: 0 10px 26px rgba(23, 50, 77, .08);
       margin-bottom: 18px;
+      padding: 28px;
     }
-
-    section {
-      margin-top: 18px;
-    }
-
-    h1,
-    h2 {
-      line-height: 1.25;
-      margin: 0 0 12px;
-    }
-
-    h1 {
-      color: #0b6da8;
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-    }
-
-    h2 {
-      color: #145d86;
-      font-size: 1.25rem;
-    }
-
-    p,
-    ul {
-      margin: 10px 0 0;
-    }
-
-    ul {
-      padding-left: 1.35rem;
-    }
-
-    li + li {
-      margin-top: 7px;
-    }
-
-    .meta {
-      color: var(--muted);
-      margin: 0;
-    }
-
-    a {
-      color: #096fae;
-      overflow-wrap: anywhere;
-    }
-
-    footer {
-      color: var(--muted);
-      font-size: .93rem;
-      padding: 22px 4px 0;
-      text-align: center;
-    }
-
+    h1, h2 { color: #145d86; }
+    h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; margin: 0 0 18px; }
+    h2 { font-size: 1.25rem; margin: 0; }
+    p, ul { margin: 10px 0 0; }
+    ul { padding-left: 1.35rem; }
+    li + li { margin-top: 7px; }
+    .meta { color: var(--muted); margin: 0; }
+    a { color: #096fae; overflow-wrap: anywhere; }
+    footer { color: var(--muted); font-size: .93rem; padding: 22px 4px 0; text-align: center; }
     @media (max-width: 560px) {
-      main {
-        width: min(100% - 20px, 920px);
-        padding-top: 20px;
-      }
-
-      header,
-      section {
-        border-radius: 16px;
-        padding: 21px 19px;
-      }
+      main { width: min(100% - 20px, 920px); padding-top: 20px; }
+      header, section { border-radius: 16px; padding: 21px 19px; }
     }
   </style>
 </head>
@@ -117,21 +56,23 @@
     <header>
       <h1>Arrow Maze Privacy Policy</h1>
       <p class="meta"><strong>Platform:</strong> Apple platforms (iPhone and iPad)</p>
-      <p class="meta"><strong>Effective date:</strong> August 27, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> August 27, 2026</p>
+      <p class="meta"><strong>Effective date:</strong> August 28, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> August 28, 2026</p>
       <p>This Privacy Policy explains how the developer of Arrow Maze (“Arrow Maze,” “we,” “us,” or “our”) handles information when you use the game.</p>
     </header>
 
     <section>
       <h2>1. Information stored on your device</h2>
       <p>Arrow Maze stores gameplay and preference information locally on your device so the game can remember your experience. This may include your language choice, sound and music settings, current and unlocked levels, star results, and in-game hint or grid counts.</p>
-      <p>This local game data is not sent to our servers. The app does not require you to create an account and does not provide developer-operated cloud sync. You can use the Privacy Center in the app to clear local game data. Removing the app or clearing its app data also removes locally stored game data, subject to the operating system’s normal behavior.</p>
+      <p>This local game data is not sent to our servers. The app does not require an account and does not provide developer-operated cloud sync. You can use the in-app Privacy Center to clear local game data. Removing the app or clearing its app data also removes locally stored game data, subject to the operating system’s normal behavior.</p>
     </section>
 
     <section>
-      <h2>2. Advertising</h2>
-      <p>Arrow Maze is free and uses advertising, including rewarded and interstitial advertising. The iOS app uses Google Mobile Ads to request non-personalized ads. It does not use Apple’s AppTrackingTransparency framework, does not request access to the IDFA, and does not use Google’s User Messaging Platform (UMP) or an in-app advertising consent form.</p>
-      <p>To serve non-personalized ads and support ad delivery, measurement, frequency limits, and fraud prevention, Google and its advertising partners may process technical information such as device and app information, IP address or approximate location inferred from it, ad requests and interactions, diagnostics, and any identifiers available to the advertising SDK. The app does not request personalized advertising or cross-app tracking.</p>
-      <p>Google’s processing is governed by Google’s own policies and terms. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
+      <h2>2. Advertising, consent, ATT, and IDFA</h2>
+      <p>Arrow Maze is free and uses rewarded and interstitial advertising through Google Mobile Ads (GMA). The app uses Google’s User Messaging Platform (UMP) to request consent information on every cold start. UMP decides whether a message is needed based on the user’s region and current consent state.</p>
+      <p>The European regulations message is configured for the EEA, the United Kingdom, and Switzerland. A separate US state regulations message is used where applicable. In other regions, the app does not proactively show the GDPR message. On iOS, UMP may also show the IDFA explainer before the Apple AppTrackingTransparency (ATT) request.</p>
+      <p>On iOS, the app requests ATT only after UMP has updated successfully and reports that ads can be requested. If ATT is authorized, the app sends a normal GMA ad request and GMA may use the IDFA for advertising delivery and measurement according to the user’s choices, Apple’s rules, and Google’s policies. The app does not directly read, store, or upload the raw IDFA.</p>
+      <p>If ATT is denied, restricted, unsupported, times out, or raises an exception, the app requests non-personalized ads (NPA). If the UMP update fails or does not finish within the app’s 10-second limit, the app skips ATT and uses a controlled NPA fallback. This fallback is a resilience measure, not a replacement for UMP: while UMP is unavailable, the app may be unable to confirm the latest EEA consent state, so this limitation is recorded as a compliance risk.</p>
+      <p>Google and its advertising partners may process device and app information, device identifiers, IP address or approximate location inferred from it, ad requests and interactions, diagnostics, and performance information for advertising, measurement, analytics, fraud prevention, security, and compliance. Google’s processing and retention are governed by its own policies and terms. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
     </section>
 
     <section>
@@ -142,20 +83,20 @@
 
     <section>
       <h2>4. Information we do not intentionally collect through the game</h2>
-      <p>The core game does not need access to your contacts, photos, camera, microphone, or precise location. We also do not include a separate developer-operated analytics or crash-reporting service in the app. Advertising providers may still make their own network requests and process the information described in Section 2.</p>
+      <p>The core game does not need access to your contacts, photos, camera, microphone, or precise location. We do not include a separate developer-operated analytics or crash-reporting service. GMA may nevertheless make network requests and process the information described in Section 2.</p>
     </section>
 
     <section>
       <h2>5. Retention, security, and international processing</h2>
-      <p>Local game data remains on your device until you clear it, remove the app, or the operating system removes it. Advertising providers retain information according to their policies and operational, legal, security, and fraud-prevention needs. Support correspondence is retained only for as long as reasonably needed to handle the request and maintain necessary records.</p>
+      <p>Local game data remains on your device until you clear it, remove the app, or the operating system removes it. Advertising providers retain information according to their policies and operational, legal, security, and fraud-prevention needs. Support correspondence is retained only as long as reasonably needed to handle the request and maintain necessary records.</p>
       <p>Google and other service providers may process information in countries other than the country where you live. We use the platform and service-provider controls available to the app, but no method of storage or transmission is completely risk-free.</p>
     </section>
 
     <section>
       <h2>6. Your choices and requests</h2>
       <ul>
-        <li>Use the in-app Privacy Center to open the policy and clear local game data.</li>
-        <li>Use the privacy and advertising controls available in iOS. The game itself does not provide a tracking authorization prompt or an in-app advertising consent form.</li>
+        <li>Use the in-app Privacy Center to open this policy, clear local game data, and—when UMP makes it available—manage advertising privacy choices through UMP’s privacy options form.</li>
+        <li>Use the privacy and advertising controls available in iOS, including the ATT choice. The game does not provide a separate custom IDFA control and does not directly access the raw IDFA.</li>
         <li>Contact us about a privacy question or a request concerning information you sent directly to us. Because gameplay data is stored locally and no Arrow Maze account or game server is used, we generally cannot retrieve or delete that local data remotely; clear it in the app or remove the app instead.</li>
       </ul>
     </section>
@@ -175,9 +116,7 @@
       <p>For privacy questions or requests, email <a href="mailto:q908267264@gmail.com">q908267264@gmail.com</a>.</p>
     </section>
 
-    <footer>
-      This policy applies to the Apple distribution of Arrow Maze. &copy; 2026 Arrow Maze.
-    </footer>
+    <footer>This policy applies to the Apple distribution of Arrow Maze. &copy; 2026 Arrow Maze.</footer>
   </main>
 </body>
 </html>
