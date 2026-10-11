@@ -56,23 +56,24 @@
     <header>
       <h1>Arrow Maze Privacy Policy</h1>
       <p class="meta"><strong>Platform:</strong> Apple platforms (iPhone and iPad)</p>
-      <p class="meta"><strong>Effective date:</strong> August 28, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> September 07, 2026</p>
-      <p>This Privacy Policy explains how the developer of Arrow Maze (“Arrow Maze,” “we,” “us,” or “our”) handles information when you use the game.</p>
+      <p class="meta"><strong>Effective date:</strong> August 28, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> October 11, 2026</p>
+      <p>This Privacy Policy explains how 余芳 伍, the developer of Arrow Maze (“Arrow Maze,” “we,” “us,” or “our”) handles information when you use the game.</p>
     </header>
 
     <section>
       <h2>1. Information stored on your device</h2>
-      <p>Arrow Maze stores gameplay and preference information locally on your device so the game can remember your experience. This may include your language choice, sound and music settings, current and unlocked levels, star results, and in-game hint or grid counts.</p>
+      <p>Arrow Maze stores gameplay and preference information locally on your device so the game can remember your experience. This may include your language choice, sound and music settings, current and unlocked levels, star results, saved games, hint counts, and the time a rewarded ad was actually shown for ad frequency and hint eligibility.</p>
       <p>This local game data is not sent to our servers. The app does not require an account and does not provide developer-operated cloud sync. You can use the in-app Privacy Center to clear local game data. Removing the app or clearing its app data also removes locally stored game data, subject to the operating system’s normal behavior.</p>
     </section>
 
     <section>
       <h2>2. Advertising, consent, and privacy-preserving attribution</h2>
       <p>Arrow Maze is free and uses rewarded and interstitial advertising through Google Mobile Ads (GMA). The app uses Google’s User Messaging Platform (UMP) to request consent information on cold starts. UMP decides whether a message is needed based on the user’s region and current consent state.</p>
-      <p>The European regulations message is configured for the EEA, the United Kingdom, and Switzerland. A separate US state regulations message is used where applicable. In other regions, the app does not proactively show the GDPR message.</p>
-      <p><strong>Arrow Maze does not track users across apps or websites owned by other companies, does not collect or use your device's advertising identifier (IDFA), and does not use Apple’s AppTrackingTransparency (ATT) framework.</strong></p>
-      <p>All ad requests on iOS are delivered as <strong>non-personalized ads (NPA)</strong>. Ad measurement and attribution rely exclusively on Apple's privacy-preserving <strong>SKAdNetwork</strong> framework and contextual ad signals, without linking your activity to external identifiers. If the regional UMP update fails or is unavailable, the app continues with this non-personalized ad model.</p>
-      <p>Google and its advertising partners may process device and app information, IP address or approximate location inferred from it, ad requests and interactions, diagnostics, and performance information for non-personalized advertising delivery, contextual measurement, fraud prevention, security, and compliance. Google’s processing and retention are governed by its own policies and terms. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
+      <p>UMP may display applicable regional privacy messages, including European regulations messages and US state regulations messages, according to the settings of the advertising service and the SDK’s consent state.</p>
+      <p>Updated versions request Apple’s AppTrackingTransparency (ATT) permission before updating UMP. With your permission, Google Mobile Ads may use your device advertising identifier (IDFA) for more relevant advertising and measurement across apps and websites. If you decline or permission is unavailable, you can continue playing; the SDK respects system permission and applicable consent signals. ATT permission does not override UMP choices. Apple’s SKAdNetwork also supports privacy-preserving attribution.</p>
+      <p>Updated versions implementing the October 2026 advertising update initialize and request advertising only when Google UMP’s <code>canRequestAds()</code> permits it. The app does not bypass this permission after a timeout or because of a country or language setting. If an update fails, valid prior consent managed by the SDK determines whether ads may be requested; an unknown state does not permit requests.</p>
+      <p>Google and its advertising partners may process advertising or other device identifiers, device and app information, IP address or approximate location inferred from it, ad requests and interactions, crash reports, diagnostics, and performance information for advertising, measurement, analytics, fraud prevention, security, and compliance. Advertising personalization and available signals depend on applicable consent and system permissions. Google controls retention under its own policies. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
+      <p>Earlier released versions do not request ATT and use non-personalized ad requests. They may continue with a non-personalized fallback after an unsuccessful UMP update. The October 2026 update removes that fallback; this policy describes both behaviors during the transition.</p>
     </section>
 
     <section>
@@ -96,7 +97,7 @@
       <h2>6. Your choices and requests</h2>
       <ul>
         <li>Use the in-app Privacy Center to open this policy, clear local game data, and—when UMP makes it available—manage regional advertising privacy choices through UMP’s privacy options form.</li>
-        <li>Use the privacy and advertising controls available in iOS settings. Because the game does not collect IDFA or track users, no in-app tracking permission is requested. You may manage regional consent options via the in-app Privacy Center.</li>
+        <li>Use Settings &gt; Privacy &amp; Security &gt; Tracking to manage ATT permission. You can decline and continue playing. The app does not reward you for granting tracking permission. Manage applicable advertising consent through the in-app Privacy Center.</li>
         <li>Contact us about a privacy question or a request concerning information you sent directly to us. Because gameplay data is stored locally and no Arrow Maze account or game server is used, we generally cannot retrieve or delete that local data remotely; clear it in the app or remove the app instead.</li>
       </ul>
     </section>
