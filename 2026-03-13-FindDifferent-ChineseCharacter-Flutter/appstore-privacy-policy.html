@@ -34,7 +34,7 @@
     <p class="meta"><strong>Platform:</strong> iOS / iPadOS App Store</p>
     <p class="meta"><strong>Bundle identifier:</strong> <code>com.zengfei.hanzifind.ios</code></p>
     <p class="meta"><strong>Developer:</strong> 珠峰 徐 (zhufeng Xu)</p>
-    <p class="meta"><strong>Effective date:</strong> October 1, 2026</p>
+    <p class="meta"><strong>Effective date:</strong> October 11, 2026</p>
   </header>
 
   <section>
@@ -72,7 +72,7 @@
   <section>
     <h2>4. Permissions, tracking, and choices</h2>
     <p>The inspected iOS/iPadOS app configuration does not request contacts, photos, camera, microphone, Bluetooth, or location permissions. It does not provide accounts, social features, chat, user-generated content, subscriptions, or in-app purchases. The app does not implement an in-app account or data-export system.</p>
-    <p>When applicable, Google’s consent-management flow asks for advertising privacy choices. The app requests Apple’s App Tracking Transparency permission before using advertising identifiers for tracking. Declining tracking permission does not block gameplay; advertising requests remain restricted when permission is denied, restricted, or undecided. Advertising privacy choices are available in Settings when required by the consent SDK.</p>
+    <p>On supported iOS versions, the app first requests Apple’s App Tracking Transparency (ATT) permission. Declining tracking does not prevent gameplay. It then updates Google’s User Messaging Platform (UMP) consent information and presents any required privacy form. Advertising is initialized and requested only when UMP permits it. The app does not override an unknown consent state after a fixed timeout. IDFA availability and advertising personalization are determined by the operating system, user choices, and Google’s SDK. Advertising privacy options are available in Settings whenever UMP requires them.</p>
     <p>The app’s advertising behavior is provided by Google Mobile Ads. Users can review Apple’s tracking and privacy controls and Google’s advertising controls, including <a href="https://adssettings.google.com/" rel="noreferrer">Google Ads Settings</a>. Available controls and ad behavior vary by location, device, operating-system version, and applicable law.</p>
   </section>
 
@@ -105,7 +105,7 @@
   </section>
 
   <footer>
-    <p>Last updated: October 1, 2026. This page is specific to 最强找字王 and is not the policy for any other application.</p>
+    <p>Last updated: October 11, 2026. This page is specific to 最强找字王 and is not the policy for any other application.</p>
   </footer>
 </main>
 </body>
