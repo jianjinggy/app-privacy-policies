@@ -71,6 +71,7 @@
   <section>
     <h2>4. Permissions, tracking, and choices</h2>
     <p>The inspected iOS/iPadOS app configuration does not request contacts, photos, camera, microphone, Bluetooth, or location permissions. It does not provide accounts, social features, chat, user-generated content, subscriptions, or in-app purchases. The app does not implement an in-app account or data-export system.</p>
+    <p>On supported iOS versions, the app first requests Apple’s App Tracking Transparency (ATT) permission. Declining tracking does not prevent gameplay. It then updates Google’s User Messaging Platform (UMP) consent information and presents any required privacy form. Advertising is initialized and requested only when UMP permits it. The app does not override an unknown consent state after a fixed timeout. IDFA availability and advertising personalization are determined by the operating system, user choices, and Google’s SDK. Advertising privacy options are available in Settings whenever UMP requires them.</p>
     <p>The app’s advertising behavior is provided by Google Mobile Ads. Users can review Apple’s tracking and privacy controls and Google’s advertising controls, including <a href="https://adssettings.google.com/" rel="noreferrer">Google Ads Settings</a>. Available controls and ad behavior vary by location, device, operating-system version, and applicable law.</p>
   </section>
 
